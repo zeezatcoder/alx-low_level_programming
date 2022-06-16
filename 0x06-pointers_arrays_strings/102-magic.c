@@ -1,8 +1,4 @@
 #include <stdio>
-/**
- * main - function for magic
- * Return: (0) for success
- */
 
 int main(void)
 {
