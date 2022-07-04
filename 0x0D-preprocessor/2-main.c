@@ -2,18 +2,18 @@
 #include <stdlib.h>
 
 /**
- * main - a program that prints the name of the file
+ * filename -  prints the name of the file
  *
+ *Description: to print filename
  * Return: nothing
  */
 
 void filename(void)
 {
 	printf("%s\n", _FILE_);
-	return (0);
 }
 /**
- * main - entr point
+ * main - entry point
  * void: means nothing
  * Return: nothing
  */
