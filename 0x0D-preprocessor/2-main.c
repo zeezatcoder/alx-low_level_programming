@@ -1,24 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * filename -  prints the name of the file
+ * main - a program that prints the name of the file
  *
- *Description: to print filename
  * Return: nothing
  */
 
-void filename(void)
-{
-	printf("%s\n", _FILE_);
-}
-/**
- * main - entry point
- * void: means nothing
- * Return: nothing
- */
 int main(void)
 {
-	filename();
+	printf("%s\n", __FILE__);
 	return (0);
 }
