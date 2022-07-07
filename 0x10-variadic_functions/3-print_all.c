@@ -20,6 +20,7 @@ void print_char(va_list arg)
 	letter = va_arg(arg, int);
 	printf("%c", letter);
 }
+
 /**
  * print_int - Prints an int.
  * @arg: A list of arguments pointing to
@@ -28,6 +29,18 @@ void print_char(va_list arg)
 void print_int(va_list arg)
 {
 	int num;
+
+	num = va_arg(arg, int);
+	printf("%d", num);
+}
+/**
+ * print_float - Prints a float.
+ * @arg: A list of arguments pointing to
+ * the float to be printed.
+ */
+void print_float(va_list arg)
+{
+	float num;
 
 	num = va_arg(arg, double);
 	printf("%f", num);
@@ -80,7 +93,7 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while (j < 4 && (*(format + i) != *(funcs[j].type)))
+		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
 			j++;
 
 		if (j < 4)
