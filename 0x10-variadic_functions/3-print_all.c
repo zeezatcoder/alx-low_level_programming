@@ -82,7 +82,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	printer_t funcs[] = {
 		{"c", print_char},
-		{"c", print_char},
+		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string}
 	};
@@ -102,6 +102,7 @@ void print_all(const char * const format, ...)
 			funcs[j].print(args);
 			separator = ", ";
 		}
+
 		i++;
 	}
 	printf("\n");
